@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75acfb5f-b31f-4328-b8db-d4b38a97a5e0" name="Changes" comment="feat: add PostHog analytics provider and update layout structure">
+    <list default="true" id="75acfb5f-b31f-4328-b8db-d4b38a97a5e0" name="Changes" comment="fix: update sitemap URLs and change frequencies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/sitemap.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/sitemap.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +119,7 @@
       <workItem from="1748257065325" duration="227000" />
       <workItem from="1748257360224" duration="31000" />
       <workItem from="1748264032278" duration="5279000" />
-      <workItem from="1748269596342" duration="1370000" />
+      <workItem from="1748269596342" duration="1785000" />
     </task>
     <task id="LOCAL-00001" summary="Enhance layout and styling with Tailwind CSS and new components&#10;&#10;- Updated global styles in globals.css to include new color variables and animations.&#10;- Modified layout.tsx to include Header and Footer components, and updated metadata for the application.&#10;- Refactored page.tsx to utilize new HeroSection, ReviewSection, and FeaturesSection components.&#10;- Added new dependencies for improved UI components and animations in package.json.">
       <option name="closed" value="true" />
@@ -162,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748270297495</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix: update sitemap URLs and change frequencies">
+      <option name="closed" value="true" />
+      <created>1748271372660</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748271372660</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +181,7 @@
     <MESSAGE value="fix: favicon updated" />
     <MESSAGE value="feat: optimized for mobile and improved SEO" />
     <MESSAGE value="feat: add PostHog analytics provider and update layout structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add PostHog analytics provider and update layout structure" />
+    <MESSAGE value="fix: update sitemap URLs and change frequencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: update sitemap URLs and change frequencies" />
   </component>
 </project>
