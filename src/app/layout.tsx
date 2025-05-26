@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type {Metadata} from "next";
+import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import "./theme.css";
 import Header from '@/components/Header';
@@ -16,27 +16,41 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Claexa AI - AI Tools for Students and Educators",
-  description: "Claexa AI offers cutting-edge AI tools, including Question Generation AI, to empower students and educators. Enhance learning and teaching with smart solutions.",
-  keywords: "Claexa AI, AI tools, education, students, educators, question generation, AI assessment, learning tools",
+  title: "Claexa AI - Question Paper Generator and AI Tools for Education",
+  description: "powerful AI tools for students and educators, including a question paper generator, AI assessment tools, and more. Enhance learning with our innovative solutions.",
+  keywords: "Claexa AI, Claexa, question paper generator, exam maker, generate question paper, question paper AI, free question paper generator, AI tools for education, AI assessment tools, AI learning tools, AI for students, AI for educators",
+  openGraph: {
+    title: "Claexa AI - Question Paper Generator and AI Tools for Education",
+    description: "instantly generate question papers, assessments, and more with Claexa AI's powerful AI tools designed for students and educators.",
+    url: "https://claexa.com",
+    siteName: "Claexa AI",
+    images: [
+      {
+        url: "https://claexa.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Claexa AI - Question Paper Generator and AI Tools for Education",
+      },
+    ],
+  }
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
-      >
-        <Header />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
-      </body>
+    <body
+      className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
+    >
+    <Header/>
+    <main className="flex-grow">
+      {children}
+    </main>
+    <Footer/>
+    </body>
     </html>
   );
 }

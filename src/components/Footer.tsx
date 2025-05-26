@@ -47,7 +47,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2 text-sm">
                 <Phone size={18} className="text-[var(--primary)]" />
-                <a href="tel:+15551234567" className="hover:text-[var(--primary)] transition-colors">+91 79800 24649</a>
+                <a href="tel:+917980024649" className="hover:text-[var(--primary)] transition-colors">+91 79800 24649</a>
               </li>
               <li className="flex items-center space-x-2 text-sm">
                 <MapPin size={18} className="text-[var(--primary)]" />
@@ -61,10 +61,10 @@ const Footer = () => {
             <h5 className="text-lg font-semibold text-white mb-4">Follow Us</h5>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
-                <a 
-                  key={social.name} 
-                  href={social.href} 
-                  target="_blank" 
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-[var(--primary)] transition-colors"
                   aria-label={social.name}

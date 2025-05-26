@@ -46,7 +46,7 @@ const PricingPage = () => {
           </p>
           <Button size="lg" asChild
                   className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg transform hover:scale-105 transition-transform duration-200">
-            <Link href="https://app.claexa.com/credits"> {/* Update this link to your credit purchase page */}
+            <Link href="https://app.claexa.com/purchase-credits"> {/* Update this link to your credit purchase page */}
               Get Started with Credits <ArrowRight className="ml-2 h-5 w-5"/>
             </Link>
           </Button>
@@ -88,7 +88,7 @@ const PricingPage = () => {
           </p>
           <Button size="lg" asChild
                   className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl transform hover:scale-105 transition-transform duration-200 py-4 px-8 text-lg">
-            <Link href="https://app.claexa.com/register"> {/* Update this link to your registration page */}
+            <Link href="https://app.claexa.com/login"> {/* Update this link to your registration page */}
               Sign Up & Get Free Trial Credits
             </Link>
           </Button>
