@@ -3,22 +3,28 @@ import type {MetadataRoute} from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://acme.com',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
+      url: 'https://claexa.com',
+      lastModified: new Date("2025-5-26"),
+      changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://acme.com/about',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: 'https://claexa.com/about',
+      lastModified: new Date("2025-5-26"),
+      changeFrequency: 'yearly',
+      priority: 0.4,
     },
     {
-      url: 'https://acme.com/blog',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.5,
+      url: 'https://claexa.com/pricing',
+      lastModified: new Date("2025-5-26"),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://claexa.com/contact',
+      lastModified: new Date("2025-5-26"),
+      changeFrequency: 'yearly',
+      priority: 0.3,
     },
   ]
 }
