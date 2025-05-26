@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HeroSection from '@/components/HeroSection';
 import ReviewSection from '@/components/ReviewSection';
 import FeaturesSection from '@/components/FeaturesSection';
@@ -6,9 +5,9 @@ import FeaturesSection from '@/components/FeaturesSection';
 export default function HomePage() {
   return (
     <main>
-      <HeroSection />
-      <ReviewSection />
-      <FeaturesSection />
+      <HeroSection/>
+      <ReviewSection/>
+      <FeaturesSection/>
     </main>
   );
 }

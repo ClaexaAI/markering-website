@@ -1,9 +1,8 @@
 "use client";
 
 import Link from 'next/link';
-import Image from 'next/image';
-import { motion } from 'motion/react';
-import { Safari } from '@/components/magicui/safari';
+import {motion} from 'motion/react';
+import {Safari} from '@/components/magicui/safari';
 
 const HeroSection = () => {
   return (
@@ -16,14 +15,15 @@ const HeroSection = () => {
               Looking for Question Paper Generator?
             </h1>
             <p className="text-lg sm:text-xl text-[var(--muted-foreground)] max-w-2xl mx-auto md:mx-0">
-try out question paper generator. make customized question paper for your students within minutes.
+              try out question paper generator. make customized question paper for your students within minutes.
             </p>
             <ul className='space-y-2 text-base text-[var(--muted-foreground)]'>
               <li>✅ Easy to use ( but highly powerful )</li>
               <li>✅ No credit cards required</li>
               <li>✅ High quality question paper within minutes.</li>
             </ul>
-            <div className="flex flex-col sm:flex-row justify-center md:justify-start items-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <div
+              className="flex flex-col sm:flex-row justify-center md:justify-start items-center space-y-4 sm:space-y-0 sm:space-x-4">
               <Link
                 href="/signup" // Placeholder link, update as needed
                 className="px-8 py-3 bg-[var(--primary)] text-[var(--primary-foreground)] font-semibold rounded-lg shadow-md hover:opacity-90 transition-all duration-300 text-lg"
@@ -37,15 +37,15 @@ try out question paper generator. make customized question paper for your studen
           </div>
 
           {/* Right Column: Image/SafariMockup - Reverted to previous state */}
-          <div className="absolute w-1/2 right-0 bottom-0" style={{ minHeight: '300px' }}>
+          <div className="absolute w-1/2 right-0 bottom-0" style={{minHeight: '300px'}}>
             <motion.div
               className="absolute top-0 bottom-0 right-0"
-              initial={{ opacity: 0, y: "25%" }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
+              initial={{opacity: 0, y: "25%"}}
+              animate={{opacity: 1, y: 0}}
+              transition={{duration: 0.8, ease: [0.25, 1, 0.5, 1]}}
             >
-              <Safari 
-                imageSrc="/hero/product-sc.png" 
+              <Safari
+                imageSrc="/hero/product-sc.png"
                 className="w-full h-auto shadow-2xl z-50 flex-grow"
                 url="https://app.claexa.com"
               />

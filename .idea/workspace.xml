@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75acfb5f-b31f-4328-b8db-d4b38a97a5e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+    <list default="true" id="75acfb5f-b31f-4328-b8db-d4b38a97a5e0" name="Changes" comment="Enhance layout and styling with Tailwind CSS and new components&#10;&#10;- Updated global styles in globals.css to include new color variables and animations.&#10;- Modified layout.tsx to include Header and Footer components, and updated metadata for the application.&#10;- Refactored page.tsx to utilize new HeroSection, ReviewSection, and FeaturesSection components.&#10;- Added new dependencies for improved UI components and animations in package.json.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pricing/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pricing/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroSection.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +31,12 @@
     &quot;assignee&quot;: &quot;Soumajit2004&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ClaexaAI/marketing-website.git&quot;,
-    &quot;accountId&quot;: &quot;3db646dc-a0ec-4d5e-a4dc-0c6d8385c449&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ClaexaAI/markering-website.git",
+    "accountId": "3db646dc-a0ec-4d5e-a4dc-0c6d8385c449"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -109,10 +110,24 @@
       <workItem from="1748228620874" duration="341000" />
       <workItem from="1748228971975" duration="496000" />
       <workItem from="1748230915655" duration="655000" />
+      <workItem from="1748253803966" duration="1103000" />
     </task>
+    <task id="LOCAL-00001" summary="Enhance layout and styling with Tailwind CSS and new components&#10;&#10;- Updated global styles in globals.css to include new color variables and animations.&#10;- Modified layout.tsx to include Header and Footer components, and updated metadata for the application.&#10;- Refactored page.tsx to utilize new HeroSection, ReviewSection, and FeaturesSection components.&#10;- Added new dependencies for improved UI components and animations in package.json.">
+      <option name="closed" value="true" />
+      <created>1748254202925</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748254202925</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Enhance layout and styling with Tailwind CSS and new components&#10;&#10;- Updated global styles in globals.css to include new color variables and animations.&#10;- Modified layout.tsx to include Header and Footer components, and updated metadata for the application.&#10;- Refactored page.tsx to utilize new HeroSection, ReviewSection, and FeaturesSection components.&#10;- Added new dependencies for improved UI components and animations in package.json." />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhance layout and styling with Tailwind CSS and new components&#10;&#10;- Updated global styles in globals.css to include new color variables and animations.&#10;- Modified layout.tsx to include Header and Footer components, and updated metadata for the application.&#10;- Refactored page.tsx to utilize new HeroSection, ReviewSection, and FeaturesSection components.&#10;- Added new dependencies for improved UI components and animations in package.json." />
   </component>
 </project>

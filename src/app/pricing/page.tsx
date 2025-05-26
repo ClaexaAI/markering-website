@@ -1,7 +1,7 @@
-import type { Metadata } from 'next';
+import type {Metadata} from 'next';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { ShieldCheck, Coins, Sparkles, ArrowRight, BadgeIndianRupee } from 'lucide-react';
+import {Button} from '@/components/ui/button';
+import {ArrowRight, Coins, ShieldCheck, Sparkles} from 'lucide-react';
 import React from 'react';
 
 export const metadata: Metadata = {
@@ -13,17 +13,17 @@ export const metadata: Metadata = {
 const PricingPage = () => {
   const features = [
     {
-      icon: <ShieldCheck size={56} className="text-green-500 mb-4" />,
+      icon: <ShieldCheck size={56} className="text-green-500 mb-4"/>,
       title: 'Secure & Reliable Transactions',
       description: 'Your payments are processed securely with industry-leading encryption and trusted payment gateways.',
     },
     {
-      icon: <Coins size={56} className="text-yellow-500 mb-4" />,
+      icon: <Coins size={56} className="text-yellow-500 mb-4"/>,
       title: 'Ultimate Flexibility',
       description: 'Purchase credits as you need them. No monthly commitments, giving you complete control over your spending.',
     },
     {
-      icon: <Sparkles size={56} className="text-purple-500 mb-4" />,
+      icon: <Sparkles size={56} className="text-purple-500 mb-4"/>,
       title: 'Clearly Affordable',
       description: 'Access powerful AI tools at a straightforward price. Transparent, budget-friendly, and packed with value.',
     },
@@ -41,11 +41,13 @@ const PricingPage = () => {
             ₹0.4 <span className="text-2xl md:text-4xl font-semibold text-muted-foreground">per Credit</span>
           </p>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            No subscriptions. No hidden fees. Only pay for the AI power you actually use with our transparent credit-based system.
+            No subscriptions. No hidden fees. Only pay for the AI power you actually use with our transparent
+            credit-based system.
           </p>
-          <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg transform hover:scale-105 transition-transform duration-200">
+          <Button size="lg" asChild
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg transform hover:scale-105 transition-transform duration-200">
             <Link href="https://app.claexa.com/credits"> {/* Update this link to your credit purchase page */}
-              Get Started with Credits <ArrowRight className="ml-2 h-5 w-5" />
+              Get Started with Credits <ArrowRight className="ml-2 h-5 w-5"/>
             </Link>
           </Button>
         </div>
@@ -64,8 +66,8 @@ const PricingPage = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-card p-8 rounded-xl shadow-lg border border-border hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center"
               >
                 {feature.icon}
@@ -84,7 +86,8 @@ const PricingPage = () => {
           <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-8">
             Join thousands of educators and students leveraging Claexa AI for smarter, faster results.
           </p>
-          <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl transform hover:scale-105 transition-transform duration-200 py-4 px-8 text-lg">
+          <Button size="lg" asChild
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl transform hover:scale-105 transition-transform duration-200 py-4 px-8 text-lg">
             <Link href="https://app.claexa.com/register"> {/* Update this link to your registration page */}
               Sign Up & Get Free Trial Credits
             </Link>

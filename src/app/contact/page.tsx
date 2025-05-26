@@ -1,8 +1,7 @@
-import type { Metadata } from 'next';
+import type {Metadata} from 'next';
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from 'lucide-react';
+import {Github, Linkedin, Mail, MapPin, Phone, Twitter} from 'lucide-react';
 import React from 'react';
-import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
   title: 'Contact Claexa AI | Get in Touch - We\'re Here to Help',
@@ -13,19 +12,19 @@ export const metadata: Metadata = {
 const ContactPage = () => {
   const contactDetails = [
     {
-      icon: <Mail size={24} className="text-primary" />,
+      icon: <Mail size={24} className="text-primary"/>,
       label: 'Email Us',
       value: 'claexa.ai.mail@gmail.com',
       href: 'mailto:claexa.ai.mail@gmail.com',
     },
     {
-      icon: <Phone size={24} className="text-primary" />,
+      icon: <Phone size={24} className="text-primary"/>,
       label: 'Call Us',
       value: '+91 79800 24649',
       href: 'tel:+917980024649',
     },
     {
-      icon: <MapPin size={24} className="text-primary" />,
+      icon: <MapPin size={24} className="text-primary"/>,
       label: 'Our Office',
       value: 'Nalikul, Hooghly, India 712407',
       // No href for address, or link to Google Maps if preferred
@@ -34,17 +33,17 @@ const ContactPage = () => {
 
   const socialLinks = [
     {
-      icon: <Twitter size={28} className="hover:text-primary transition-colors" />,
+      icon: <Twitter size={28} className="hover:text-primary transition-colors"/>,
       href: 'https://twitter.com/claexa_ai', // Replace with your Twitter link
       label: 'Twitter',
     },
     {
-      icon: <Linkedin size={28} className="hover:text-primary transition-colors" />,
+      icon: <Linkedin size={28} className="hover:text-primary transition-colors"/>,
       href: 'https://linkedin.com/company/claexa-ai', // Replace with your LinkedIn link
       label: 'LinkedIn',
     },
     {
-      icon: <Github size={28} className="hover:text-primary transition-colors" />,
+      icon: <Github size={28} className="hover:text-primary transition-colors"/>,
       href: 'https://github.com/claexa', // Replace with your GitHub link
       label: 'GitHub',
     },
@@ -70,10 +69,12 @@ const ContactPage = () => {
           <div className="max-w-3xl mx-auto space-y-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 text-center">Contact Information</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 text-center">Contact
+                Information</h2>
               <div className="space-y-6">
                 {contactDetails.map((item, index) => (
-                  <div key={index} className="flex items-start space-x-4 p-4 bg-card rounded-lg border border-border shadow-sm">
+                  <div key={index}
+                       className="flex items-start space-x-4 p-4 bg-card rounded-lg border border-border shadow-sm">
                     <div className="flex-shrink-0 mt-1">{item.icon}</div>
                     <div>
                       <h3 className="text-lg font-medium text-card-foreground">{item.label}</h3>
@@ -95,15 +96,15 @@ const ContactPage = () => {
               <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-8 text-center">Connect With Us</h2>
               <div className="flex justify-center space-x-6 md:space-x-8">
                 {socialLinks.map((social, index) => (
-                  <Link 
-                    key={index} 
-                    href={social.href} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    aria-label={social.label} 
+                  <Link
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
                     className="text-muted-foreground p-3 rounded-full hover:bg-primary/10 transition-all duration-200 ease-in-out transform hover:scale-110"
                   >
-                    {React.cloneElement(social.icon, { size: 32 })}
+                    {React.cloneElement(social.icon, {size: 32})}
                   </Link>
                 ))}
               </div>
