@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75acfb5f-b31f-4328-b8db-d4b38a97a5e0" name="Changes" comment="fix: favicon updated">
-      <change afterPath="$PROJECT_DIR$/public/og-image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/sitemap.ts" afterDir="false" />
+    <list default="true" id="75acfb5f-b31f-4328-b8db-d4b38a97a5e0" name="Changes" comment="feat: optimized for mobile and improved SEO">
+      <change afterPath="$PROJECT_DIR$/src/app/providers.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/hero/product-sc.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/hero/product-sc.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pricing/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pricing/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroSection.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,24 +44,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "js.debugger.nextJs.config.created.client": "true",
-    "last_opened_file_path": "/home/soumajit/Developer/claexa/marketing-website/public/hero",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "pnpm",
-    "npm.dev.executor": "Run",
-    "ts.external.directory.path": "/home/soumajit/Developer/claexa/marketing-website/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/soumajit/Developer/claexa/marketing-website/public/hero&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/soumajit/Developer/claexa/marketing-website/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -129,7 +122,8 @@
       <workItem from="1748253803966" duration="1755000" />
       <workItem from="1748257065325" duration="227000" />
       <workItem from="1748257360224" duration="31000" />
-      <workItem from="1748264032278" duration="5146000" />
+      <workItem from="1748264032278" duration="5279000" />
+      <workItem from="1748269596342" duration="643000" />
     </task>
     <task id="LOCAL-00001" summary="Enhance layout and styling with Tailwind CSS and new components&#10;&#10;- Updated global styles in globals.css to include new color variables and animations.&#10;- Modified layout.tsx to include Header and Footer components, and updated metadata for the application.&#10;- Refactored page.tsx to utilize new HeroSection, ReviewSection, and FeaturesSection components.&#10;- Added new dependencies for improved UI components and animations in package.json.">
       <option name="closed" value="true" />
@@ -155,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748257382577</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: optimized for mobile and improved SEO">
+      <option name="closed" value="true" />
+      <created>1748269412039</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748269412039</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +167,7 @@
     <MESSAGE value="Enhance layout and styling with Tailwind CSS and new components&#10;&#10;- Updated global styles in globals.css to include new color variables and animations.&#10;- Modified layout.tsx to include Header and Footer components, and updated metadata for the application.&#10;- Refactored page.tsx to utilize new HeroSection, ReviewSection, and FeaturesSection components.&#10;- Added new dependencies for improved UI components and animations in package.json." />
     <MESSAGE value="fix: linting issues" />
     <MESSAGE value="fix: favicon updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: favicon updated" />
+    <MESSAGE value="feat: optimized for mobile and improved SEO" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: optimized for mobile and improved SEO" />
   </component>
 </project>
