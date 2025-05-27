@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Claexa AI - Question Paper Generator and AI Tools for Education",
-  description: "powerful AI tools for students and educators, including a question paper generator, AI assessment tools, and more. Enhance learning with our innovative solutions.",
+  title: "Claexa AI - Free AI Question Paper Generator",
+  description: "Powerful AI tools for students and educators, including a question paper generator, AI assessment tools, and more. Enhance learning with our innovative solutions.",
   keywords: "Claexa AI, Claexa, question paper generator, exam maker, generate question paper, question paper AI, free question paper generator, AI tools for education, AI assessment tools, AI learning tools, AI for students, AI for educators",
   openGraph: {
-    title: "Claexa AI - Question Paper Generator and AI Tools for Education",
+    title: "Claexa AI - Free AI Question Paper Generator",
     description: "instantly generate question papers, assessments, and more with Claexa AI's powerful AI tools designed for students and educators.",
     url: "https://claexa.com",
     siteName: "Claexa AI",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: "https://claexa.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Claexa AI - Question Paper Generator and AI Tools for Education",
+        alt: "Claexa AI - Free AI Question Paper Generator",
       },
     ],
   }
