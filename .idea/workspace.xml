@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75acfb5f-b31f-4328-b8db-d4b38a97a5e0" name="Changes" comment="fix: update .gitignore and workspace.xml for improved project configuration">
-      <change beforePath="$PROJECT_DIR$/.firebaserc" beforeDir="false" />
+    <list default="true" id="75acfb5f-b31f-4328-b8db-d4b38a97a5e0" name="Changes" comment="feat: update layout metadata and enhance project configuration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apphosting.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/reviews.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/reviews.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +149,9 @@
       <workItem from="1748272020037" duration="848000" />
       <workItem from="1748275005486" duration="402000" />
       <workItem from="1748301799540" duration="2099000" />
-      <workItem from="1748309773788" duration="90000" />
+      <workItem from="1748309773788" duration="123000" />
+      <workItem from="1748310524146" duration="180000" />
+      <workItem from="1748353382653" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="Enhance layout and styling with Tailwind CSS and new components&#10;&#10;- Updated global styles in globals.css to include new color variables and animations.&#10;- Modified layout.tsx to include Header and Footer components, and updated metadata for the application.&#10;- Refactored page.tsx to utilize new HeroSection, ReviewSection, and FeaturesSection components.&#10;- Added new dependencies for improved UI components and animations in package.json.">
       <option name="closed" value="true" />
@@ -211,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748271716194</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: update layout metadata and enhance project configuration">
+      <option name="closed" value="true" />
+      <created>1748309882060</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1748309882060</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +231,7 @@
     <MESSAGE value="feat: add PostHog analytics provider and update layout structure" />
     <MESSAGE value="fix: update sitemap URLs and change frequencies" />
     <MESSAGE value="fix: update .gitignore and workspace.xml for improved project configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: update .gitignore and workspace.xml for improved project configuration" />
+    <MESSAGE value="feat: update layout metadata and enhance project configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update layout metadata and enhance project configuration" />
   </component>
 </project>
