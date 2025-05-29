@@ -82,10 +82,10 @@ const Footer = () => {
             &copy; {currentYear} Claexa AI. All rights reserved.
           </p>
           <div className="flex space-x-4">
-            <Link href="/privacy-policy" className="hover:text-[var(--primary)] transition-colors">
+            <Link href="https://app.claexa.com/legal?tab=privacy" target={"_blank"} className="hover:text-[var(--primary)] transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms-of-service" className="hover:text-[var(--primary)] transition-colors">
+            <Link href="https://app.claexa.com/legal?tab=terms" target={"_blank"} className="hover:text-[var(--primary)] transition-colors">
               Terms of Service
             </Link>
           </div>

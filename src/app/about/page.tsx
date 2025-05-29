@@ -7,12 +7,75 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'About Claexa AI | Our Story - Built by Students, Trusted by Teachers',
   description: 'Learn about Claexa AI, a platform built by college students Soumajit Ghosh and Saurodip Singha, now helping hundreds of teachers daily. Discover our mission and vision.',
-  keywords: 'About Claexa AI, Soumajit Ghosh, Saurodip Singha, AI in education, edtech startup, student project, teacher tools',
+  keywords: 'About Claexa AI, Soumajit Ghosh, Saurodip Singha, AI in education, edtech startup, student project, teacher tools, Claexa story, Claexa mission',
+  openGraph: {
+    title: 'About Claexa AI | Our Story - Built by Students, Trusted by Teachers',
+    description: 'Learn about Claexa AI, a platform built by college students Soumajit Ghosh and Saurodip Singha. Discover our mission and vision.',
+    url: 'https://claexa.com/about',
+    siteName: 'Claexa AI',
+    type: 'profile', // 'profile' can be suitable for an 'about us' page of an organization
+    locale: 'en_US',
+    images: [
+      {
+        url: "/logo/loco-c.png",
+        width: 1200,
+        height: 630,
+        alt: 'About Claexa AI',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Claexa AI | Our Story - Built by Students, Trusted by Teachers',
+    description: 'Learn about Claexa AI, a platform built by college students Soumajit Ghosh and Saurodip Singha. Discover our mission and vision.',
+    images: ['/logo/loco-c.png'], // Placeholder
+    site: '@ClaexaAI'
+  }
+};
+
+const aboutPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Claexa AI - Our Story, Mission, and Vision",
+  "description": "Learn about the origins, mission, and vision of Claexa AI, an EdTech platform created by Soumajit Ghosh and Saurodip Singha to empower educators.",
+  "url": "https://claexa.com/about",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://claexa.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Claexa AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/logo/loco-c.png"
+    }
+  },
+  "mentions": [
+    {
+      "@type": "Person",
+      "name": "Soumajit Ghosh",
+      "jobTitle": "Co-founder",
+      "description": "Co-creator of Claexa AI, focused on leveraging AI for educational tools."
+      // "sameAs": "URL_to_Soumajit_LinkedIn_or_profile" // Optional
+    },
+    {
+      "@type": "Person",
+      "name": "Saurodip Singha",
+      "jobTitle": "Co-founder",
+      "description": "Co-creator of Claexa AI, passionate about improving education through technology."
+      // "sameAs": "URL_to_Saurodip_LinkedIn_or_profile" // Optional
+    }
+  ]
 };
 
 const AboutPage = () => {
   return (
     <div className="bg-background text-foreground">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
+      />
       {/* Hero Section */}
       <section className="py-10 md:py-12 bg-secondary/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,7 +93,7 @@ const AboutPage = () => {
               </p>
               <div className="flex space-x-4">
                 <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg">
-                  <Link href="/features">
+                  <Link href="/features/question-paper-generator"> {/* Corrected Link */}
                     Explore Features
                   </Link>
                 </Button>

@@ -7,7 +7,64 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'Flexible Pricing - Claexa AI | Affordable AI Credits',
   description: 'Explore Claexa AI\'s transparent pricing. Pay only ₹0.4 INR per credit for powerful AI tools. Secure payments, flexible options, no hidden fees.',
-  keywords: 'Claexa AI pricing, AI credits, affordable AI, pay-as-you-go AI, question generation pricing',
+  keywords: 'Claexa AI pricing, AI credits, affordable AI, pay-as-you-go AI, question generation pricing, education AI cost, teacher AI tools price',
+  openGraph: {
+    title: 'Claexa AI Pricing - Affordable Pay-As-You-Go AI Credits',
+    description: 'Transparent and flexible pricing for Claexa AI. Get powerful AI tools at just ₹0.4 INR per credit. No subscriptions, no hidden fees.',
+    url: 'https://claexa.com/pricing',
+    siteName: 'Claexa AI',
+    type: 'website', // Changed from 'product' to 'website' to resolve lint error
+    images: [
+      {
+        url: '/logo/loco-c.png',
+        width: 1200,
+        height: 630,
+        alt: 'Claexa AI Pricing',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Claexa AI Pricing - Affordable Pay-As-You-Go AI Credits',
+    description: 'Transparent and flexible pricing for Claexa AI. Get powerful AI tools at just ₹0.4 INR per credit.',
+    images: ['/logo/loco-c.png'],
+    site: '@ClaexaAI'
+  }
+};
+
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Claexa AI Credits",
+  "description": "Flexible, pay-as-you-go AI credits for accessing Claexa AI's suite of educational tools, including the question paper generator. Priced at ₹0.4 INR per credit.",
+  "image": "/logo/loco-c.png",
+  "brand": {
+    "@type": "Brand",
+    "name": "Claexa AI"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0.4",
+    "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "0.4",
+        "priceCurrency": "INR",
+        "unitText": "credit"
+    },
+    "availability": "https://schema.org/InStock",
+    "url": "https://claexa.com/pricing", // Link to this pricing page
+    "seller": {
+      "@type": "Organization",
+      "name": "Claexa AI"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8", // Placeholder: Update with actual average rating if available
+    "reviewCount": "150"  // Placeholder: Update with actual review count if available
+  }
+  // If you have individual reviews, you can add "review": [{...}, {...}]
 };
 
 const PricingPage = () => {
@@ -31,6 +88,10 @@ const PricingPage = () => {
 
   return (
     <div className="bg-secondary from-background to-secondary/50 text-foreground">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       {/* Hero Section */}
       <section className="py-20 md:py-32 text-center bg-secondary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

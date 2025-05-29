@@ -6,7 +6,68 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'Contact Claexa AI | Get in Touch - We\'re Here to Help',
   description: 'Contact Claexa AI for support, inquiries, or feedback. Reach us via email, phone, or connect on social media. Our team is ready to assist you.',
-  keywords: 'Contact Claexa AI, Claexa AI support, get in touch, Claexa AI email, Claexa AI phone, AI education contact',
+  keywords: 'Contact Claexa AI, Claexa AI support, get in touch, Claexa AI email, Claexa AI phone, AI education contact, customer service, helpdesk',
+  openGraph: {
+    title: 'Contact Claexa AI | Get in Touch',
+    description: 'Reach out to Claexa AI for support or inquiries. We are here to help you with our AI educational tools.',
+    url: 'https://claexa.com/contact',
+    siteName: 'Claexa AI',
+    type: 'website', // Or 'profile' if it represents the contact profile of the org
+    locale: 'en_US',
+    images: [
+      {
+        url: '/logo/loco-c.png',
+        width: 1200,
+        height: 630,
+        alt: 'Contact Claexa AI',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Claexa AI | Get in Touch',
+    description: 'Reach out to Claexa AI for support or inquiries. We are here to help you with our AI educational tools.',
+    images: ['/logo/loco-c.png'],
+    site: '@ClaexaAI'
+  }
+};
+
+const contactPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Claexa AI",
+  "description": "Get in touch with Claexa AI for support, inquiries, or feedback regarding our AI educational tools.",
+  "url": "https://claexa.com/contact",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://claexa.com/contact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Claexa AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/logo/loco-c.png"
+    }
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+91-79800-24649",
+      "contactType": "Customer Service", // Or 'Technical Support', 'Sales', etc.
+      "email": "claexa.ai.mail@gmail.com",
+      "areaServed": "IN", // ISO 3166-1 alpha-2 country code for India
+      "availableLanguage": ["English", "Bengali"] // Example languages
+    }
+  ]
+  // You can also add address schema here if needed:
+  // "address": {
+  //   "@type": "PostalAddress",
+  //   "streetAddress": "Nalikul",
+  //   "addressLocality": "Hooghly",
+  //   "postalCode": "712407",
+  //   "addressCountry": "IN"
+  // }
 };
 
 const ContactPage = () => {
@@ -34,23 +95,27 @@ const ContactPage = () => {
   const socialLinks = [
     {
       icon: <Twitter size={28} className="hover:text-primary transition-colors"/>,
-      href: 'https://twitter.com/claexa_ai', // Replace with your Twitter link
+      href: 'https://twitter.com/ClaexaAI', // Standardized Twitter link
       label: 'Twitter',
     },
     {
       icon: <Linkedin size={28} className="hover:text-primary transition-colors"/>,
-      href: 'https://linkedin.com/company/claexa-ai', // Replace with your LinkedIn link
+      href: 'https://linkedin.com/company/claexa-ai',
       label: 'LinkedIn',
     },
     {
       icon: <Github size={28} className="hover:text-primary transition-colors"/>,
-      href: 'https://github.com/claexa', // Replace with your GitHub link
+      href: 'https://github.com/claexa',
       label: 'GitHub',
     },
   ];
 
   return (
     <div className="flex flex-col min-h-[calc(100vh-var(--header-height,4rem))] bg-background text-foreground">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
+      />
       {/* Hero Section */}
       <section className="py-16 md:py-20 text-center bg-secondary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

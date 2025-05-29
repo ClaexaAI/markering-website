@@ -11,7 +11,7 @@ export default function NotFound() {
       {/* Adjust min-h if header/footer height is known, e.g., min-h-[calc(100vh-10rem)] */}
       {/* Using a generic var(--header-height) that you might define in globals.css or calculate dynamically */}
       <AlertTriangle size={64} className="text-destructive mb-6" />
-      
+
       <h1 className="text-5xl md:text-7xl font-bold text-primary mb-4">
         404
       </h1>
@@ -21,11 +21,11 @@ export default function NotFound() {
       <p className="text-md md:text-lg text-muted-foreground mb-8 max-w-md">
         Oops! The page you are looking for does not exist, might have been removed, or is temporarily unavailable.
       </p>
-      
+
       <Button asChild size="lg">
         <Link href="/">
           <Home size={20} className="mr-2" />
-          Go to Homepage
+          Go to Homepage test
         </Link>
       </Button>
     </div>

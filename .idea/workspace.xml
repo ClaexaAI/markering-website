@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75acfb5f-b31f-4328-b8db-d4b38a97a5e0" name="Changes" comment="feat: update layout metadata and enhance project configuration">
+    <list default="true" id="75acfb5f-b31f-4328-b8db-d4b38a97a5e0" name="Changes" comment="fix: remove outdated review entry and update workspace task summary">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/reviews.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/reviews.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/not-found.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/not-found.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +82,7 @@
       <recent name="$PROJECT_DIR$/public/hero" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
     </configuration>
@@ -116,9 +118,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +153,10 @@
       <workItem from="1748301799540" duration="2099000" />
       <workItem from="1748309773788" duration="123000" />
       <workItem from="1748310524146" duration="180000" />
-      <workItem from="1748353382653" duration="34000" />
+      <workItem from="1748353382653" duration="64000" />
+      <workItem from="1748407691594" duration="8000" />
+      <workItem from="1748409017392" duration="2287000" />
+      <workItem from="1748486229443" duration="2430000" />
     </task>
     <task id="LOCAL-00001" summary="Enhance layout and styling with Tailwind CSS and new components&#10;&#10;- Updated global styles in globals.css to include new color variables and animations.&#10;- Modified layout.tsx to include Header and Footer components, and updated metadata for the application.&#10;- Refactored page.tsx to utilize new HeroSection, ReviewSection, and FeaturesSection components.&#10;- Added new dependencies for improved UI components and animations in package.json.">
       <option name="closed" value="true" />
@@ -217,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748309882060</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix: remove outdated review entry and update workspace task summary">
+      <option name="closed" value="true" />
+      <created>1748353435099</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1748353435099</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +245,7 @@
     <MESSAGE value="fix: update sitemap URLs and change frequencies" />
     <MESSAGE value="fix: update .gitignore and workspace.xml for improved project configuration" />
     <MESSAGE value="feat: update layout metadata and enhance project configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update layout metadata and enhance project configuration" />
+    <MESSAGE value="fix: remove outdated review entry and update workspace task summary" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: remove outdated review entry and update workspace task summary" />
   </component>
 </project>
