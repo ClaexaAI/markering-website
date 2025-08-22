@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Settings, ListChecks, BookCopy, BarChart3, ShoppingCart, Tag, CheckSquare, FileText } from 'lucide-react';
+import { Settings, ListChecks, ShoppingCart, FileText } from 'lucide-react';
 import React from 'react';
 import { Button } from '@/components/ui/button';
 
