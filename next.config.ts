@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Enable standalone output to create a minimal production image
+  output: "standalone",
 };
 
 export default nextConfig;
